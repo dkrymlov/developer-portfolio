@@ -1,0 +1,65 @@
+<div class="skills-text">
+  <h1 class="titile-font">Skills - Tech Stack</h1>
+</div>
+
+<div class="tech-stack" (window:resize)="onResize($event)">
+  <swiper [autoplay]="{ delay: 2500, disableOnInteraction: true }" [slidesPerView]="slidesPerView" (swiper)="setControlledSwiper($event)"
+          [pagination]="{ clickable: true }">
+    <div class="tech" *swiperSlide>
+      <img src="/assets/angular.png" alt="">
+      <h1 style="color: red" class="titile-font">AngularJS</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/html.png" alt="">
+      <h1 style="color: #f66102" class="titile-font">HTML5</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/css.png" alt="">
+      <h1 style="color: #1867de" class="titile-font">CSS3</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/js.png" alt="">
+      <h1 style="color: #e1d429" class="titile-font">JavaScript</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/ts.png" alt="">
+      <h1 style="color: #1273bb" class="titile-font">TypeScript</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/java.png" alt="">
+      <h1 style="color: #577d91" class="titile-font">Java</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/maven.png" alt="">
+      <h1 style="color: #8c6cbd" class="titile-font">Maven</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/spring.png" alt="">
+      <h1 style="color: #4aa64c" class="titile-font">Spring</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/hibernate.png" alt="">
+      <h1 style="color: #a69a4a" class="titile-font">Hibernate</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/firebase.png" alt="">
+      <h1 style="color: #f5b317" class="titile-font">Firebase</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/mongo.png" alt="">
+      <h1 style="color: #16a200" class="titile-font">MongoDB</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/databases.png" alt="">
+      <h1 style="color: #000000" class="titile-font">SQL/NoSQL</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/sockets.png" alt="">
+      <h1 style="color: #000000" class="titile-font">Socket.IO</h1>
+    </div>
+    <div class="tech" *swiperSlide>
+      <img src="/assets/git.png" alt="">
+      <h1 style="color: #000000" class="titile-font">Git</h1>
+    </div>
+  </swiper>
+</div>

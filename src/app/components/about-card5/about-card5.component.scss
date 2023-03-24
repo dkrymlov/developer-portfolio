@@ -1,0 +1,117 @@
+.card{
+  cursor: pointer;
+  width: calc(100% - 60px);
+  height: 110px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #e6e7ee;
+  border-radius: 20px;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.01);
+  }
+  .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    box-shadow: -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+    margin-left: 20px;
+    img{
+      height: 65px;
+      width: 65px;
+    }
+  }
+  span{
+    color: #4362ce;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .card{
+    span{
+      font-size: 26px;
+    }
+    .photo{
+      width: 70px;
+      height: 70px;
+      img{
+        height: 55px;
+        width: 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card{
+    span{
+      font-size: 22px;
+    }
+    .photo{
+      width: 60px;
+      height: 60px;
+      img{
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .card{
+    span{
+      font-size: 20px;
+    }
+    .photo{
+      margin-left: 10px;
+      width: 60px;
+      height: 60px;
+      img{
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .card{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: calc(100% - 40px);
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .card{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+  }
+}

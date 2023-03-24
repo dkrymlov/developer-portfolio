@@ -1,0 +1,287 @@
+/* Define styles for the project container */
+.no-match{
+  width: 100%;
+  height: 580px;
+  background-color: #d4deff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: #08804e;
+  }
+}
+
+.projects{
+  -webkit-box-shadow: 0px -20px 16px 12px rgba(212,222,255,1);
+  -moz-box-shadow: 0px -20px 16px 12px rgba(212,222,255,1);
+  box-shadow: 0px -20px 16px 12px rgba(212,222,255,1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: #d4deff;
+  margin-top: 0;
+  .top-div{
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    .projects-title{
+      transition: 0.2s ease-in-out;
+      &:hover{
+        transform: scale(1.01);
+      }
+      margin-top: 0;
+      margin-right: 10px;
+      width: 60%;
+      height: 100px;
+      min-height: 100px;
+      border-radius: 20px;
+      background-color: #d4deff;
+      box-shadow: -7px -7px 20px 0px #fff9,
+      -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002,
+      4px 4px 5px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        color: #08804e;
+      }
+    }
+    .search{
+      transition: 0.2s ease-in-out;
+      &:hover{
+        transform: scale(1.01);
+      }
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-top: 0;
+      width: 40%;
+      height: 100px;
+      min-height: 100px;
+      border-radius: 20px;
+      background-color: #d4deff;
+      box-shadow: -7px -7px 20px 0px #fff9,
+      -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002,
+      4px 4px 5px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        background-color: #d4deff;
+        border-radius: 30%;
+        box-shadow: -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+        margin-right: 15px;
+      }
+      input{
+        cursor: pointer;
+        width: 60%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 20px;
+        outline: none;
+        box-shadow: -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+        border: none;
+        background-color: transparent;
+        color: #08804e;
+        padding-left: 20px;
+        transition: 0.2s all ease-in-out;
+        &:focus{
+          cursor: text;
+          box-shadow: 0px 0px 0px 0px #fff9,
+          0px 0px 0px 0px #fff9,
+          0px 0px 0px 0px #0001,
+          0px 0px 0px 0px #0001,
+          inset -7px -7px 20px 0px #fff9,
+          inset -4px -4px 5px 0px #fff9,
+          inset 7px 7px 20px 0px #0003,
+          inset 4px 4px 5px 0px #0001 !important;
+        }
+      }
+    }
+  }
+}
+
+.project-grid {
+  margin-top: 0;
+  display: grid;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+.project {
+  margin: 20px auto 10px;
+  width: 350px;
+  min-width: 380px;
+  background-color: #d4deff;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.01);
+  }
+}
+
+/* Define styles for the project image */
+.preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Define styles for the project title */
+.title {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #08804e;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #08804e;
+}
+
+/* Define styles for the project subtitle */
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #656565;
+  margin: 10px 0 20px;
+}
+
+.date-text{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000000;
+  .date{
+    font-weight: 700;
+    color: #08804e;
+  }
+}
+
+.status-text{
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  .status{
+    font-weight: 700;
+    color: #08804e;
+  }
+}
+
+/* Define styles for the project button */
+.button {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #d4deff;
+  text-align: center;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    box-shadow: none;
+    background-color: black;
+    color: #d4deff;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .top-div{
+    flex-direction: column;
+    .search{
+      width: calc(100% - 20px)!important;
+    }
+    .projects-title{
+      display: none!important;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .project-grid {
+    margin-top: 440px!important;
+  }
+  .top-div{
+    .search{
+      margin-top: 440px!important;
+      img{
+        margin-left: 15px!important;
+      }
+      input{
+        width: 70%!important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .project-grid {
+    margin-top: 410px!important;
+  }
+  .top-div{
+    .search{
+      margin-top: 410px!important;
+      input{
+        width: 60%!important;
+      }
+    }
+  }
+  .project{
+    width: 60%!important;
+    min-width: 60%!important;
+  }
+  .preview{
+  }
+  .button{
+    width: 80%!important;
+  }
+}
+

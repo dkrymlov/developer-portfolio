@@ -1,0 +1,71 @@
+.card{
+  width: 100%;
+  height: 230px;
+  background-color: #e6e7ee;
+  border-radius: 20px;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  margin: 10px 10px 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.01);
+  }
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 170px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    box-shadow: -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+    img{
+      animation: beat;
+      animation-duration: 0.9s;
+      animation-iteration-count: infinite;
+      margin-top: 10px;
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+
+@keyframes beat {
+  from{
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .card{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card{
+    width: calc(100% - 20px);
+  }
+}

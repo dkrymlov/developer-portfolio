@@ -1,0 +1,32 @@
+<div class="projects">
+
+  <div class="top-div">
+    <div class="search">
+      <img class="search-img" src="assets/search.png" alt="">
+      <input #search (input)="filterChats(search.value)" class="titile-font" placeholder="Search in projects" type="text">
+    </div>
+    <div class="projects-title">
+      <h1 class="titile-font">Projects</h1>
+    </div>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project" *ngFor="let project of projects | async;">
+      <img class="preview" src="{{project.image}}" alt="Project Preview">
+      <h2 class="title titile-font" [textContent]="project.title"></h2>
+      <p class="subtitle-font subtitle" [textContent]="project.shortDesc"></p>
+      <span class="subtitle-font date-text">Start date: <span class="subtitle-font date" [textContent]="project.startDate"></span></span>
+      <span class="subtitle-font date-text">End date: <span class="subtitle-font date" [textContent]="project.endDate">2022-02-22</span></span>
+      <span class="subtitle-font status-text">Status: <span class="subtitle-font status" [textContent]="project.status"></span></span>
+      <p class="titile-font button" (click)="route(project.github)">Go to Github</p>
+    </div>
+
+  </div>
+
+  <div class="no-match" *ngIf="projectsLength == 0">
+    <h1 class="titile-font">No matches!</h1>
+  </div>
+
+</div>
+

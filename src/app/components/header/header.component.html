@@ -1,0 +1,46 @@
+<header [ngStyle]="{'background-color': backgroundColor}" >
+  <div class="logo">
+    <img src="assets/image.jpg" alt="Your Name">
+    <h1 #name (mouseenter)="onMouseEnter(name)" (mouseleave)="onMouseLeave(name)" [ngStyle]="{'color': color}" class="titile-font" (click)="nameClick()" [ngClass]="isNameActive ? 'active-link' : ''" >Dev Portfolio</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a #first [ngStyle]="{'color': color}" (mouseenter)="onMouse(first)" (mouseleave)="onLeave(first)" (click)="aboutClick()" [ngClass]="isAboutActive ? 'active-link' : ''" class="titile-font" href="#about">About</a></li>
+      <li><a #second [ngStyle]="{'color': color}" (mouseenter)="onMouse(second)" (mouseleave)="onLeave(second)" (click)="skillsClick()" [ngClass]="isSkillsActive ? 'active-link' : ''" class="titile-font" href="#skills">Skills</a></li>
+      <li><a #third [ngStyle]="{'color': color}" (mouseenter)="onMouse(third)" (mouseleave)="onLeave(third)" (click)="projectsClick()" [ngClass]="isProjectsActive ? 'active-link' : ''" class="titile-font" href="#projects">Projects</a></li>
+      <li><a #fourth [ngStyle]="{'color': color}" (mouseenter)="onMouse(fourth)" (mouseleave)="onLeave(fourth)" (click)="contactsClick()" [ngClass]="isContactsActive ? 'active-link' : ''" class="titile-font" href="#contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <div class="m_button" (click)="menuOpened()" [ngClass]="isMenuOpened ? 'active-btn' : ''">
+    <span [ngStyle]="{'background-color': color}"></span>
+    <span [ngStyle]="{'background': color}"></span>
+    <span [ngStyle]="{'background': color}"></span>
+  </div>
+
+</header>
+
+<div id="menu" class="floating-menu" [ngStyle]="{'background-color': backgroundColor}">
+
+  <h1 id="menu-title" class="titile-font">Menu</h1>
+
+  <div id="about" class="row-element">
+    <img src="assets/about.png">
+    <a [ngStyle]="{'color': color}" (click)="aboutClick()" [ngClass]="isAboutActive ? 'active-link' : ''" class="titile-font" href="#about">About</a>
+  </div>
+
+  <div id="skills" class="row-element">
+    <img src="assets/logical-thinking.png">
+    <a [ngStyle]="{'color': color}" (click)="skillsClick()" [ngClass]="isSkillsActive ? 'active-link' : ''" class="titile-font" href="#skills">Skills</a>
+  </div>
+
+  <div id="projects" class="row-element">
+    <img src="assets/analytics.png">
+    <a [ngStyle]="{'color': color}" (click)="projectsClick()" [ngClass]="isProjectsActive ? 'active-link' : ''" class="titile-font" href="#projects">Projects</a>
+  </div>
+
+  <div id="contacts" class="row-element">
+    <img src="assets/contact.png">
+    <a [ngStyle]="{'color': color}" (click)="contactsClick()" [ngClass]="isContactsActive ? 'active-link' : ''" class="titile-font" href="#contacts">Contacts</a>
+  </div>
+</div>

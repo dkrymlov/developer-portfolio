@@ -1,0 +1,95 @@
+.neumorphic-card {
+  height: 600px;
+  width: 100%;
+  background-color: #e6e7ee;
+  border-radius: 20px;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.01);
+    .card-title{
+      animation: textclip 3s linear infinite;
+    }
+  }
+}
+
+.photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  background-color: #eeeeee;
+  box-shadow: -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.card-details {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 32px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2D4CC8;
+  background-image: linear-gradient(
+      -225deg,
+      #2D4CC8 0%,
+      #8a4ec9 29%,
+      lightcoral 67%,
+      #d5b801 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.card-subtitle {
+  font-size: 24px;
+  color: #777;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+@media screen and (max-width: 950px){
+  .neumorphic-card {
+    width: calc(100% - 20px);
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

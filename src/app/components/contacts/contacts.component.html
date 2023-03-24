@@ -1,0 +1,19 @@
+<div class="contacts">
+  <div class="left">
+    <app-rate></app-rate>
+  </div>
+  <div class="right">
+    <div class="contact-text">
+      <h1 class="titile-font">Contact Me!</h1>
+    </div>
+    <form class="contact" #f="ngForm" (ngSubmit)="submitMessage(f, name, message)" ngNativeValidate>
+      <label class="titile-font" for="name">Your name</label>
+      <input #name ngModel class="subtitle-font" id="name" placeholder="Elon Mask" name="name">
+      <label class="titile-font"  for="text">Message</label>
+      <textarea #message ngModel class="subtitle-font" id="text" name="text" placeholder="Hello Danylo! I want you to work in SpaceX! Contact me ASAP, here is my personal email..."></textarea>
+      <span class="subtitle-font"><svg id="changeColor" fill="#DC7633" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" zoomAndPan="magnify" viewBox="0 0 375 374.9999" height="200" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><path id="pathAttribute" d="M 7.09375 7.09375 L 367.84375 7.09375 L 367.84375 367.84375 L 7.09375 367.84375 Z M 7.09375 7.09375 " fill="#737373"></path></defs><g><path id="pathAttribute" d="M 187.46875 7.09375 C 87.851562 7.09375 7.09375 87.851562 7.09375 187.46875 C 7.09375 287.085938 87.851562 367.84375 187.46875 367.84375 C 287.085938 367.84375 367.84375 287.085938 367.84375 187.46875 C 367.84375 87.851562 287.085938 7.09375 187.46875 7.09375 " fill-opacity="1" fill-rule="nonzero" fill="#737373"></path></g><g id="inner-icon" transform="translate(85, 75)"> <svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16" id="IconChangeColor"> <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" id="mainIconPathAttribute" fill="#bdcaff"></path> </svg> </g></svg>It`s better to give me your email address for reply!</span>
+      <button id="btn-write" [ngClass]="btnActive ? 'active-btn' : ''"  class="titile-font">Write</button>
+    </form>
+  </div>
+</div>
+
