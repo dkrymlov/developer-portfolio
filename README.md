@@ -1,4 +1,10 @@
 # My web developer portfolio website
+[You can see the result by visiting this link!](https://mydevcv.web.app/#about)
+#Gallery
+![alt text](https://imgur.com/99ZBK7g.jpg)
+![alt text](https://imgur.com/HnEG91Q.jpg)
+![alt text](https://imgur.com/jPy4uAP.jpg)
+![alt text](https://imgur.com/TpJeRdT.jpg)
 # About
 This project is created to demonstrate Front-End skills and to describe me as a Front-End Developer
 # Features
