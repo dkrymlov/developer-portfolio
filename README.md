@@ -3,6 +3,13 @@
 
 # About
 This project is created to demonstrate Front-End skills and to describe me as a Front-End Developer
+
+# Photo Gallery
+![alt text](https://imgur.com/99ZBK7g.jpg)
+![alt text](https://imgur.com/HnEG91Q.jpg)
+![alt text](https://imgur.com/jPy4uAP.jpg)
+![alt text](https://imgur.com/TpJeRdT.jpg)
+
 # Features
 
 Full responsive interface
@@ -10,12 +17,6 @@ Full responsive interface
 Neumorphic design
 
 Contact form using cloud Database
-
-# Photo Gallery
-![alt text](https://imgur.com/99ZBK7g.jpg)
-![alt text](https://imgur.com/HnEG91Q.jpg)
-![alt text](https://imgur.com/jPy4uAP.jpg)
-![alt text](https://imgur.com/TpJeRdT.jpg)
 
 # How to make it work
 1) Download repository
