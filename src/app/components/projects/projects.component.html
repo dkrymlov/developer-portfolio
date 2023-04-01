@@ -1,4 +1,4 @@
-<div class="projects">
+<div class="projects" id="projects">
 
   <div class="top-div">
     <div class="search">
@@ -19,7 +19,7 @@
       <span class="subtitle-font date-text">Start date: <span class="subtitle-font date" [textContent]="project.startDate"></span></span>
       <span class="subtitle-font date-text">End date: <span class="subtitle-font date" [textContent]="project.endDate">2022-02-22</span></span>
       <span class="subtitle-font status-text">Status: <span class="subtitle-font status" [textContent]="project.status"></span></span>
-      <p class="titile-font button" (click)="route(project.github)">Go to Github</p>
+      <p class="titile-font button" (click)="route(project.github)" [textContent]="project.btnName"></p>
     </div>
 
   </div>

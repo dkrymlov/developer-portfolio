@@ -8,8 +8,9 @@ export class Project{
   status : string
   image : string
   github : string
+  btnName : string
 
-  constructor(id : number,title: string, shortDesc: string, fullText: string, startDate: string, endDate: string, status: string, image: string, github : string) {
+  constructor(id : number,title: string, shortDesc: string, fullText: string, startDate: string, endDate: string, status: string, image: string, github : string, btnName : string) {
     this.id_ = id;
     this.title = title;
     this.shortDesc = shortDesc;
@@ -19,5 +20,6 @@ export class Project{
     this.status = status;
     this.image = image;
     this.github = github;
+    this.btnName = btnName
   }
 }

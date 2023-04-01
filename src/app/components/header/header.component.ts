@@ -1,11 +1,16 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {AboutComponent} from "../about/about.component";
+import {SkillsComponent} from "../skills/skills.component";
+import {DegreeComponent} from "../degree/degree.component";
+import {ProjectsComponent} from "../projects/projects.component";
+import {ContactsComponent} from "../contacts/contacts.component";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
 
   @HostListener("window:scroll", []) onWindowScroll() {
     // do some stuff here when the window is scrolled
@@ -62,7 +67,12 @@ export class HeaderComponent implements OnInit {
 
   backgroundColor : string = ''
   color : string = ''
-  constructor() { }
+  constructor(private renderer: Renderer2) {
+
+  }
+
+  ngAfterViewInit(): void {
+  }
 
   isMenuOpened : boolean = false
   isAboutActive: boolean = false;
@@ -72,6 +82,7 @@ export class HeaderComponent implements OnInit {
   isNameActive: boolean = false;
 
   ngOnInit(): void {
+
   }
 
   menuOpened() {
@@ -116,6 +127,11 @@ export class HeaderComponent implements OnInit {
     this.isProjectsActive = false;
     this.isContactsActive = false;
     this.isNameActive = false;
+    setTimeout(()=>{
+      this.isAboutActive = false;
+    }, 1000)
+    // @ts-ignore
+    window.scrollTo(0, 0);
   }
 
   skillsClick() {
@@ -124,6 +140,16 @@ export class HeaderComponent implements OnInit {
     this.isProjectsActive = false;
     this.isContactsActive = false;
     this.isNameActive = false;
+    setTimeout(() => {
+      this.isSkillsActive = false;
+    }, 1000)
+    if (innerWidth > 950) {
+      window.scrollTo(0, 625)
+    }else if (innerWidth < 950 && innerWidth > 800){
+      window.scrollTo(0, 1240)
+    }else if (innerWidth < 800){
+      window.scrollTo(0, 1245)
+    }
   }
 
   projectsClick() {
@@ -132,6 +158,17 @@ export class HeaderComponent implements OnInit {
     this.isProjectsActive = true;
     this.isContactsActive = false;
     this.isNameActive = false;
+    setTimeout(()=>{
+      this.isProjectsActive = false;
+    }, 1000)
+    // @ts-ignore
+    if (innerWidth > 950) {
+      window.scrollTo(0, 1145)
+    }else if (innerWidth < 950 && innerWidth > 800){
+      window.scrollTo(0, 2185)
+    }else if (innerWidth < 800){
+      window.scrollTo(0, 2185)
+    }
   }
 
   contactsClick() {
@@ -140,6 +177,17 @@ export class HeaderComponent implements OnInit {
     this.isProjectsActive = false;
     this.isContactsActive = true;
     this.isNameActive = false;
+    setTimeout(()=>{
+      this.isContactsActive = false;
+    }, 1000)
+    // @ts-ignore
+    if (innerWidth > 950) {
+      window.scrollTo(0, 5000)
+    }else if (innerWidth < 950 && innerWidth > 800){
+      window.scrollTo(0, 3470)
+    }else if (innerWidth < 800){
+      window.scrollTo(0, 4610)
+    }
   }
 
   nameClick() {
@@ -148,6 +196,8 @@ export class HeaderComponent implements OnInit {
     this.isProjectsActive = false;
     this.isContactsActive = false;
     this.isNameActive = true;
+    // @ts-ignore
+    window.scrollTo(0, 0);
     setTimeout(()=>{
       this.isNameActive = false;
     }, 1000)
