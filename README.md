@@ -27,7 +27,7 @@ Contact form using cloud Database
 # Technologies
 NodeJs
 
-AngularJs
+Angular 2+
 
 Typescript
 
